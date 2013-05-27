@@ -1,11 +1,9 @@
-var prime = 0;
-	j = 2,
+var j = 2,
 	k = 0;
 
 while (k < 10001) {
 	var isprime = true;
-	var d = j;
-	for (var i = 2; i <= d/i; i++) {
+	for (var i = 2; i <= j/i; i++) {
 		if (j % i == 0) { 
 			isprime = false;
 			break;
@@ -13,9 +11,10 @@ while (k < 10001) {
 	}
 	if (isprime) {
 		k++;
-		prime = j;
 	}
-	j++;
+    if (k < 10001) {
+        j++;
+    }
 }
 
-alert(prime);
+alert(j);

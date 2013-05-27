@@ -1,15 +1,15 @@
 var sum = 600851475143, 
-	i = 1, 
-	factor;
+	i = 1;
 
 while (sum > 1) {
 	if (sum % i == 0) {
 		sum /= i;
-		factor = i;
-		i++;
+		if (sum > 1) {
+			i++;
+		}
 	} else {
 		i++;
 	}
 }
 
-alert(factor);
+alert(i);

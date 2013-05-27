@@ -1,5 +1,4 @@
-var totalArr = [],
-	collatz;
+var totalArr = [];
 
 for (var i = 2; i < 1000000; i++) {
 	var j = i;
@@ -21,4 +20,4 @@ for (var i = 2; i < 1000000; i++) {
 	totalArr.push([i, arr.length]);
 }
 
-alert(totalArr.sort(function(a, b) { return b[1]-a[1]; })[0][0]);
+alert(totalArr.sort(function(a, b) { return b[1] - a[1]; })[0][0]);

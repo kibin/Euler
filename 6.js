@@ -1,6 +1,5 @@
 var sumOfSquares = 0,
-	squareOfSums = 0,
-	difference;
+	squareOfSums = 0;
 
 for (var i = 1; i <= 100; i++) {
 	sumOfSquares += i*i;
@@ -8,6 +7,4 @@ for (var i = 1; i <= 100; i++) {
 }
 squareOfSums *= squareOfSums;
 
-difference = squareOfSums - sumOfSquares;
-
-alert(difference);
+alert(squareOfSums - sumOfSquares);

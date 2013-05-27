@@ -1,7 +1,6 @@
 var condition,
 	loop = true;
 	maxdiv = 20,
-	multiple = 0,
 	i = 20;
 
 while (loop) {
@@ -14,11 +13,10 @@ while (loop) {
 		}
 	}
 	if (condition == true) {
-		multiple = i;
 		loop = false;
 		break;
 	}
 	i += maxdiv;
 }
 
-alert(multiple);
+alert(i);

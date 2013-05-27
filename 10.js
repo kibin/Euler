@@ -1,5 +1,4 @@
-var prime = 0,
-	sum = 2,
+var sum = 2,
 	j = 3;
 
 while (j < 2000000) {
@@ -11,8 +10,7 @@ while (j < 2000000) {
 		}
 	}
 	if (isprime) {
-		prime = j;
-		sum += prime;
+		sum += j;
 	}
 	
 	j += 2;
