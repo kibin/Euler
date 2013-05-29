@@ -4,10 +4,9 @@ var condition,
 	i = 20;
 
 while (loop) {
+	condition = true;
 	for (var j = 2; j < maxdiv; j++) {
-		if (i % j == 0) {
-			condition = true;
-		} else {
+		if (i % j != 0) {
 			condition = false;
 			break;
 		}
