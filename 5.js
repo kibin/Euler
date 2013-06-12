@@ -1,21 +1,18 @@
-var condition,
-	loop = true;
-	maxdiv = 20,
+var isit,
 	i = 20;
 
-while (loop) {
-	condition = true;
-	for (var j = 2; j < maxdiv; j++) {
+while (true) {
+	isit = 'yep';
+	for (var j = 11; j <= 20; j++) {
 		if (i % j != 0) {
-			condition = false;
+			isit = 'nope';
 			break;
 		}
 	}
-	if (condition == true) {
-		loop = false;
+	if (isit == 'yep') {
 		break;
 	}
-	i += maxdiv;
+	i += 20;
 }
 
 alert(i);
