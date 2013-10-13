@@ -33,5 +33,4 @@ for (var i = 0; i < 10; i++) {
 	}
 }
 
-
-alert(total.join('').length);
+alert(total, '\n\n\n\n', total.join('').length);
